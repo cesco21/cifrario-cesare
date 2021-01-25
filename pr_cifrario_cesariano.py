@@ -1,8 +1,13 @@
-# LORENZO E' PASSATO DI QUI
+ # LORENZO E' PASSATO DI QUI
 
-array = "scemo chi legge"
+n = int(input("inserisci il numero di quante lettere vuoi che cambi: "))
+array = "ciao"
+codice = ""
+n = n%26
 for i in array:
-	n = ord("a")
-	x = ord("a") + 3
-	x = chr(array[i])
-print("il testo cifrato è: ", array)
+	if (n>26):
+		n-26	
+	x = ord(i)+n
+	x = chr(x)
+	codice = codice+x
+print(codice)
